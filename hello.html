@@ -1,0 +1,27 @@
+<script>
+	class Dummy{
+		show()
+		{
+			console.log("dummy is running");
+		}
+	}
+	class Demo extends Dummy{
+		display()
+		{
+			console.log("display is running from Demo");
+		}
+	}
+	class Rahul extends Demo
+	{
+          show2()
+          {
+          	console.log("show2 is running from Rahul");
+          }
+	}
+      var d
+      =new Rahul();
+      d.display();
+      d.show();
+      d.show2();
+	
+</script>
