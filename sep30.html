@@ -1,0 +1,15 @@
+<script>
+	class Dummy{
+		show(){
+			console.log("show is running from dummy");
+		}
+	}
+	class Demo extends Dummy{
+		show(){
+			super.show();
+			console.log("show is running from Demo");
+		}
+	}
+	var d=new Demo();
+	d.show();
+</script>
